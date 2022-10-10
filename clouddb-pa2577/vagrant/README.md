@@ -7,3 +7,10 @@
     * Note that `/vagrant` is the same as your starting directory on your host computer
 4. Exit the Vagrant VM with `exit`
 5. Clean up: `vagrant destroy -f`
+
+# Provisioning with Puppet
+
+Documentation:
+* [Puppet Apply Provisioner](https://www.vagrantup.com/docs/provisioning/puppet_apply)
+
+1. Provision using Vagrant: `vagrant provision`
