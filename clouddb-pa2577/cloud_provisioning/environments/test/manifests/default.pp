@@ -1,11 +1,11 @@
 node 'appserver' {
-    include baseconfig, nodejs
+    include baseconfig, nodejs, hosts
 }
 
 node 'dbserver' {
-    include baseconfig, mysql
+    include baseconfig, mysql, hosts
 }
 
 node default {
-    include baseconfig
+    include baseconfig, hosts
 }
