@@ -6,14 +6,17 @@ class nodejs {
     }
 
     package { "nodejs":
-        ensure => "latest"
+        ensure => "latest",
+        require => Exec['apt-update']
     }
 
     package { "git":
-        ensure => "latest"
+        ensure => "latest",
+        require => Exec['apt-update']
     }
 
     package { "build-essential":
-        ensure => "latest"
+        ensure => "latest",
+        require => Exec['apt-update']
     }
 }

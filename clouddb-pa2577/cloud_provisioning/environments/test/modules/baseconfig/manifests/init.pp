@@ -4,8 +4,6 @@ class baseconfig {
         command => '/usr/bin/apt-get update'
     }
 
-    Exec["apt-update"] -> Package <| |>
-
     package { "curl":
         ensure  => latest
     }
